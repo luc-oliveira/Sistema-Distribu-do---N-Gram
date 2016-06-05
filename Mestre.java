@@ -53,7 +53,7 @@ public class Mestre implements Runnable {
 	public static final int SERVER_RECEIVE_PORT = 25000, SERVER_SEND_PORT = 25001, RECEIVE_DATAGRAM = 25003;
 	public static final int FILE_BUFFER = 2048;
 	volatile static List<File> Files;
-	private static final String FILES_LOCATION = "/media/aluno/TIKA/Arquivoss";
+	private static final String FILES_LOCATION = "/CAMINHO/DA/PASTA/COM/ARQUIVOS/A/SEREM/PROCESSADOS";
 	private Socket conexao;
 	static Integer Arquivo = 0;
 	private final static String nomeMatrizPrincipal = "geradoMatriz.txt";
