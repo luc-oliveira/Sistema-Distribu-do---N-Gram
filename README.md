@@ -26,6 +26,10 @@ GeraMatrizMaster -> Atualiza num conjunto unico os dados que os escravos enviam 
 
 GeraMatrizWorker -> Recebe o arquivo que o mestre enviou e processa ele, classe que efetua o processamento no escravo.
 
+<h1>COMO USAR</h1>
+No arquivo do mestre, altere a constante FILES_LOCATION com o caminho da sua pasta com os arquivos de texto que você deseja processar. Então inicie o mestre, ele ficará procurando escravos para poder enviar os arquivos a serem processados, você poderá iniciar um escravo no mesmo computador e este processará os arquivos, ou iniciar o arquivo escravo em outros máquinas que estejam na mesma rede que o mestre. Após processar todos os arquivos será criado uma pasta chamada 'resultado-final' contendo dois arquivos, um primeiro arquivo da matriz que foi gerada chamado de 'geradoMatriz.txt' e um outro que mostra o tempo que foi iniciado o processo dos arquivos chamado 'tempo.txt' .
+ATENÇÃO: O mestre e escravo só irão funcionar se estiverem na mesma rede, pois para o mestre poder identificar o escravo é utilizado broadcast.
+
 <h1>AUTORES</h1>
 
 Este projeto foi desenvolvido na Faculdade de Tecnologia (FATEC) de Carapicuíba, pelos alunos Lucas Oliveira de Almeida e Luana Mantovani Cassiano da Silva, para a disciplina de Sistemas Distribuídos, ministrada pelo professor Evandro Luquini.
